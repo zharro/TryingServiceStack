@@ -1,6 +1,6 @@
 ﻿using ServiceStack;
 
-namespace TryingServiceStack.Dto
+namespace TryingServiceStack.ServiceModel.Dto
 {
     [Route("/user", "GET", Summary = "User Service", Notes = "Toy service example")]
     public class User : IReturn<UserResponse>

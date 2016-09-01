@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace TryingServiceStack.Dto
+namespace TryingServiceStack.ServiceModel.Dto
 {
     public class UserResponse
     {
-        public string UserId { get; set; }
+        public int UserId { get; set; }
         public string Msisdn { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

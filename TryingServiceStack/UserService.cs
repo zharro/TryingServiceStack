@@ -1,6 +1,6 @@
 ﻿using System;
 using ServiceStack;
-using TryingServiceStack.Dto;
+using TryingServiceStack.ServiceModel.Dto;
 
 namespace TryingServiceStack
 {
@@ -10,6 +10,7 @@ namespace TryingServiceStack
         {
             return new UserResponse
             {
+                UserId = 1,
                 FirstName = "Service",
                 LastName = "Stack",
                 IsEnabled = true,
