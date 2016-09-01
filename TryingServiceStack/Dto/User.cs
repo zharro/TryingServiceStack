@@ -2,7 +2,7 @@
 
 namespace TryingServiceStack.Dto
 {
-    [Route("/user", Summary = "Hello Service", Notes = "More description about Hello Service")]
+    [Route("/user", "GET", Summary = "User Service", Notes = "Toy service example")]
     public class User : IReturn<UserResponse>
     {
         /// <summary>
