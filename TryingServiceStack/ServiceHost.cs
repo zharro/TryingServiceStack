@@ -1,5 +1,6 @@
 ﻿using Funq;
 using ServiceStack;
+using ServiceStack.Api.Swagger;
 
 namespace TryingServiceStack
 {
@@ -16,6 +17,7 @@ namespace TryingServiceStack
         /// <param name="container">Container to register.</param>
         public override void Configure(Container container)
         {
+            Plugins.Add(new SwaggerFeature());
         }
     }
 }
