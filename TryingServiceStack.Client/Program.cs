@@ -9,7 +9,7 @@ namespace TryingServiceStack.Client
         static void Main(string[] args)
         {
             var client = new JsonHttpClient("http://localhost:8088");
-            UserResponse response = client.Get(new User() { });
+            UserResponse response = client.Get(new User());
             Console.WriteLine(response.FirstName);
         }
     }
